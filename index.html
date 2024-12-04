@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #foo{
+            height: 300px;
+            width: 500px;
+            /* background-color: aliceblue; */
+           
+        }
+        nav ul li{
+            list-style: none;
+            padding-left: 60px;
+        }
+        nav{
+            display: flex;
+            /* background:url("https://static.vecteezy.com/system/resources/previews/030/469/812/large_2x/healthy-food-background-with-fruits-and-vegetables-top-view-with-copy-space-ai-generated-photo.jpg"); */
+            background-color: black;
+            color: white;
+        }
+        nav ul{
+            display: flex;
+            margin-left: 600px;
+        }
+        h1{
+            margin-left: 50px;
+        }
+        .b1{
+            border: none;
+            background-color: palevioletred;
+            cursor: pointer;
+        }
+        .blog label{
+        margin-left: 28px;
+         margin-top: 30px; 
+        font-weight: 600;
+        font-size: 17px;
+        color: black;
+      }
+      #about{
+        margin-left: 22px;
+    height: 109px;
+    margin-top: 9px;
+    width: 343px;
+    border: none;
+      }
+      .blog button{
+        margin-left: 146px;
+        margin-top: 31px;
+    height: 37px;
+    width: 87px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+
+      }
+      h4{
+        font-size: 33px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 500;
+    font-variant: all-small-caps;
+    text-decoration: underline;
+      }
+      .blog{
+        height: 516px;
+        width: 400px;
+        background-color:#ffffffbf;
+        margin-left: 530px;
+        margin-top: 50px;
+        box-shadow: 1px 5px 10px 4px #5e5e5863;
+
+        
+      }
+      body{
+           
+        background-image: url("https://i.pinimg.com/originals/d1/de/05/d1de05fd1cb0f0e30cd0024ba7986869.jpg"); 
+       
+        background-size: cover;
+        }
+      #food{
+        width: 341px;
+    margin-left: 24px;
+    margin-top: 10px;
+    height: 24px;
+    border: none;
+      }
+      #interest{
+    width: 342px;
+    height: 82px;
+    margin-left: 24px;
+    margin-top: 10px;
+    border: none;
+      }
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <h1> BLOG</h1>
+        <ul>
+            <li>HOME</li>
+            <li>CONTACT </li>
+            <li>HELP</li>
+        </ul>
+    </nav>
+    <div class="blog">
+        <h4>Create your blog</h4>
+        <div >
+          <label for="">Full Name:-</label>
+          <input type="text" name="food" id="food"><br>
+          <br>
+          <label for="" id="hello">About Yourself:-</label>
+          <input type="text" name="about" id="about">
+          <br>
+          <br>
+          <label for="" >Interests:-</label>
+          
+          <input type="text" name="interest" id="interest">
+          <button onclick="create()">Create</button>
+
+        </div>
+      </div>
+    
+    
+    <script>
+            function create(){
+          let div1=document.createElement("div");
+        let h=document.getElementById("food").value;
+       
+        let p=document.createElement("p");
+        let tx=document.createTextNode(h);
+          p.appendChild(tx);
+          div1.appendChild(p);
+          document.body.appendChild(div1);
+          //div1.style.background
+          div1.style.width='350px';
+          div1.style.height='400px';
+          
+          div1.style.marginLeft="20px";
+          div1.style.marginTop="20px";
+          //h.setAttribute("style", "background-color:darkblue;")
+
+         // div1.p.style.background="red";
+         
+
+          
+          let h1=document.getElementById("about").value;
+        let p1=document.createElement("p1");
+        let tx1=document.createTextNode(h1);
+        p1.appendChild(tx1);
+        div1.appendChild(p1);
+        document.body.appendChild(div1);
+
+        let h5=document.getElementById("interest").value;
+        let p5=document.createElement("p5");
+        let tx5=document.createTextNode(h5);
+        p5.appendChild(tx5);
+        div1.appendChild(p5);
+
+        document.body.appendChild(div1);
+        div1.style.background="#ffffffbf"
+        div1.style.display="flex"
+        
+       
+            }
+
+        
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>
